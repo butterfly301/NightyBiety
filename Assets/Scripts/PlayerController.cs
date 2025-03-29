@@ -1,0 +1,81 @@
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+    [Header("Movement Settings")]
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float jumpForce ;
+    
+    [Header("Ground Check")]
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckRadius;
+    [SerializeField] private LayerMask groundLayer;
+    
+    private Rigidbody2D rb;
+    private bool isGrounded;
+    private float moveInput;
+    private bool facingRight = true;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        /*Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition.z = 0; // 保持z坐标为0
+        transform.position = mousePosition;   */
+        // 获取水平输入(A/D或左右箭头)
+        moveInput = Input.GetAxisRaw("Horizontal");
+        
+        
+        // 跳跃检测
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            Jump();
+        }
+        
+        // 翻转角色朝向
+        if (moveInput > 0 && !facingRight)
+        {
+            Flip();
+        }
+        else if (moveInput < 0 && facingRight)
+        {
+            Flip();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        // 地面检测
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        // 水平移动
+        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+    }
+
+    private void Jump()
+    {
+        rb.AddForce(Vector2.up*jumpForce, ForceMode2D.Impulse);
+    }
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
+
+    // 可选：在编辑器中可视化地面检测范围
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+    }
+}
