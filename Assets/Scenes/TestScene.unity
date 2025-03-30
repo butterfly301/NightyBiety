@@ -6916,6 +6916,7 @@ GameObject:
   - component: {fileID: 2054453401}
   - component: {fileID: 2054453407}
   - component: {fileID: 2054453408}
+  - component: {fileID: 2054453409}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -7042,7 +7043,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  firearm: {fileID: 0}
 --- !u!58 &2054453408
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7078,6 +7078,25 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.67}
   serializedVersion: 2
   m_Radius: 1.2
+--- !u!114 &2054453409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054453392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f282f76d107b1944c9e02f605da50d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayLength: 10
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 192
+  hoverForce: 10
+  hoverSmoothness: 5
+  gravityScale: 1
 --- !u!1 &2076086899
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     
     private Rigidbody2D rb;
-    public Firearm firearm;
+    private Firearm firearm;
     private bool isGrounded;
     private float moveInput;
     private bool facingRight = true;
@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
         transform.position = mousePosition;   */
         // 获取水平输入(A/D或左右箭头)
         moveInput = Input.GetAxisRaw("Horizontal");
+        
 
         RecoilWhenShoot();
         // 跳跃检测
@@ -87,10 +88,12 @@ public class PlayerController : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
+    
+    
 
     void RecoilWhenShoot()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetMouseButtonDown(0))
         {
             if (facingRight)
             {
