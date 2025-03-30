@@ -21,6 +21,7 @@ TagManager:
   - Avoid
   - RailRight
   - RailLeft
+  - GrabItem
   layers:
   - Default
   - TransparentFX

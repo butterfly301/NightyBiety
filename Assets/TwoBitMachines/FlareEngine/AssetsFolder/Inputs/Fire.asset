@@ -15,9 +15,9 @@ MonoBehaviour:
   buttonName: Fire
   type: 1
   mouse: 0
-  key: 0
-  bindings: []
+  key: 106
   axisName: 
+  bindings: []
   axisToRead: 0
   maxThreshold: 99
   minThreshold: -99

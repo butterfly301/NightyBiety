@@ -6,29 +6,28 @@ using UnityEngine;
 public class Hook : MonoBehaviour
 {
     private bool isGrabed;
+    private Transform grabbedItemTransform;
 
     private void Update()
     {
-        if (Input.GetMouseButtonUp(0))
+        if (isGrabed)
+        {
+            grabbedItemTransform.transform.position = transform.position;
+        }
+        
+        if (Input.GetMouseButtonUp(1))
         {
             isGrabed = false;
+            grabbedItemTransform = null;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("GrabItem") )
+        if (other.gameObject.CompareTag("GrabItem")&& Input.GetMouseButton(1))
         {
             isGrabed = true;
-            other.gameObject.transform.SetParent(transform);
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.layer == LayerMask.NameToLayer("GrabItem")&&isGrabed)
-        {
-            other.gameObject.GetComponent<Rigidbody2D>().AddForce((other.transform.position - transform.position).normalized, ForceMode2D.Force);
+            grabbedItemTransform=other.gameObject.transform;
         }
     }
 }

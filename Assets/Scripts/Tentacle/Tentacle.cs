@@ -114,7 +114,6 @@ public class Tentacle : MonoBehaviour
                 break;
         }
     }
-    
 
     void Walk()
     {
@@ -140,7 +139,7 @@ public class Tentacle : MonoBehaviour
         {
             // 对末端施加力使其靠近墙面
             //Vector2 forceDir = (closestPoint - (Vector2)endRb.position).normalized;
-            Vector2 forceDir = closestPoint - (Vector2)endRb.position;
+            Vector2 forceDir = (closestPoint - (Vector2)endRb.position).normalized;
             endRb.AddForce(forceDir * stiffness);
         }
     }

@@ -30,7 +30,7 @@ public class TentacleManager : MonoBehaviour
 
     void ChangeLogic()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             switch (GetCurrentDirection())
             {
@@ -60,7 +60,7 @@ public class TentacleManager : MonoBehaviour
                     break;
             }
         }
-        else if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(1))
         {
             for (int i = 0; i < tentacles.Length; i++)
             {

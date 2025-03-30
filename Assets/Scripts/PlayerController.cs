@@ -1,3 +1,4 @@
+using TwoBitMachines.FlareEngine;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce ;
+    [SerializeField] private float recoilForce;
     
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
@@ -13,13 +15,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     
     private Rigidbody2D rb;
+    public Firearm firearm;
     private bool isGrounded;
     private float moveInput;
     private bool facingRight = true;
+    
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        firearm = GetComponentInChildren<Firearm>();
     }
 
     private void Update()
@@ -29,8 +34,8 @@ public class PlayerController : MonoBehaviour
         transform.position = mousePosition;   */
         // 获取水平输入(A/D或左右箭头)
         moveInput = Input.GetAxisRaw("Horizontal");
-        
-        
+
+        RecoilWhenShoot();
         // 跳跃检测
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
@@ -67,6 +72,10 @@ public class PlayerController : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+        if(facingRight)
+            firearm.rotate.fixedDirection = new Vector2(1, 0);
+        else if(!facingRight)
+            firearm.rotate.fixedDirection = new Vector2(-1, 0);
     }
 
     // 可选：在编辑器中可视化地面检测范围
@@ -76,6 +85,19 @@ public class PlayerController : MonoBehaviour
         {
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+    }
+
+    void RecoilWhenShoot()
+    {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            if (facingRight)
+            {
+                rb.AddForce(Vector2.left * recoilForce, ForceMode2D.Force);
+            }
+            else if (!facingRight)
+                rb.AddForce(Vector2.right * recoilForce, ForceMode2D.Force);
         }
     }
 }
