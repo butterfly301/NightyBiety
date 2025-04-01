@@ -24,7 +24,7 @@ public class Hook : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("GrabItem")&& Input.GetMouseButton(1))
+        if (other.gameObject.layer==LayerMask.NameToLayer("GrabItem")  && Input.GetMouseButton(1))
         {
             isGrabed = true;
             grabbedItemTransform=other.gameObject.transform;

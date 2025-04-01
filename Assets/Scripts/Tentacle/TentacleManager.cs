@@ -105,7 +105,7 @@ public class TentacleManager : MonoBehaviour
     
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Food"))
+        if (other.CompareTag("Food"))
         {
             if (Input.GetKey(KeyCode.E))
             {
@@ -127,7 +127,7 @@ public class TentacleManager : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Food"))
+        if (other.CompareTag("Food"))
             for (int i = 0; i < tentacles.Length; i++)
             {
                 tentacles[i].ChangeState("Walk");

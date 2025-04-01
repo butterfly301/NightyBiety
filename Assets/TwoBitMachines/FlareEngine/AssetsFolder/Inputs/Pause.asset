@@ -15,6 +15,10 @@ MonoBehaviour:
   buttonName: Pause
   type: 0
   mouse: 0
-  key: 112
+  key: 27
+  axisName: 
   bindings: []
+  axisToRead: 0
+  maxThreshold: 99
+  minThreshold: -99
   foldOut: 0

@@ -96,6 +96,16 @@ public class PlayerHover : MonoBehaviour
                 rb.velocity.x, 
                 Mathf.Lerp(rb.velocity.y, force, hoverSmoothness * Time.fixedDeltaTime));
         }
+        else if (!hasWallAbove && hasWallBelow && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
+        {
+            // 恢复原始重力
+            rb.gravityScale = 0;
+            
+            // 应用力
+            rb.velocity = new Vector2(
+                rb.velocity.x, 
+                Mathf.Lerp(rb.velocity.y, hoverForce/30, hoverSmoothness * Time.fixedDeltaTime));
+        }
         else
         {
             // 没有检测到两面墙时，恢复重力自然下落

@@ -38,8 +38,8 @@ public class Tentacle : MonoBehaviour
         segments = new GameObject[segmentCount];
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = segmentCount;
-        lineRenderer.startWidth = 0.2f;
-        lineRenderer.endWidth = 0.05f;
+        lineRenderer.startWidth = 0.5f;
+        lineRenderer.endWidth = 0.1f;
         
         // 创建触手关节
         for (int i = 0; i < segmentCount; i++)

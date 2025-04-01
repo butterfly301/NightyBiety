@@ -43,15 +43,7 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
         
-        // 翻转角色朝向
-        if (moveInput > 0 && !facingRight)
-        {
-            Flip();
-        }
-        else if (moveInput < 0 && facingRight)
-        {
-            Flip();
-        }
+        
     }
 
     private void FixedUpdate()
@@ -65,6 +57,31 @@ public class PlayerController : MonoBehaviour
     private void Jump()
     {
         rb.AddForce(Vector2.up*jumpForce, ForceMode2D.Impulse);
+    }
+
+    private void CheckDirection()
+    {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        
+        // 确定目标朝向
+        facingRight = mousePosition.x < transform.position.x;
+        if (!facingRight)
+        {
+            Flip();
+        }
+        else if (facingRight)
+        {
+            Flip();
+        }
+        // 翻转角色朝向
+        /*if (moveInput > 0 && !facingRight)
+        {
+            Flip();
+        }
+        else if (moveInput < 0 && facingRight)
+        {
+            Flip();
+        }*/
     }
 
     private void Flip()
