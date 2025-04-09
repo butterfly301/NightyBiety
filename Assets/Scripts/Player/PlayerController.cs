@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce ;
@@ -19,10 +20,14 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private float moveInput;
     private bool facingRight = true;
-    
+
+
+    //血量
+    private float health;
 
     private void Awake()
     {
+        instance = this;
         rb = GetComponent<Rigidbody2D>();
         firearm = GetComponentInChildren<Firearm>();
     }
@@ -83,6 +88,10 @@ public class PlayerController : MonoBehaviour
             Flip();
         }*/
     }
+    public void ChangeHealth(float gap)
+    {
+        health += gap;
+    }
 
     private void Flip()
     {
@@ -105,7 +114,6 @@ public class PlayerController : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
-    
     
 
     void RecoilWhenShoot()
