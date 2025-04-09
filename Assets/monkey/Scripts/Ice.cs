@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TwoBitMachines.FlareEngine;
 using UnityEngine;
 
 public class Ice : MonoBehaviour
 {
     public float shakeStrength;
-    // Start is called before the first frame update
+    public float damage;
     void Start()
     {
         originRot = transform.rotation.eulerAngles;
@@ -48,15 +49,15 @@ public class Ice : MonoBehaviour
             }
 
         }
-        Debug.Log(num);
         gameObject.transform.eulerAngles = originRot+ new Vector3(0,0,num);   
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.gameObject.name == "Player")
         {
-            Debug.Log("ÃüÖÐÍæ¼Ò");
-            PlayerController.instance.ChangeHealth(-5); 
+            var health = PlayerController.instance.gameObject.GetComponent<Health>();
+            health.SetValue(health.GetValue() - damage);
+            Debug.Log("damage");
             
         }
     }

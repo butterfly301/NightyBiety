@@ -22,9 +22,6 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
 
 
-    //血量
-    private float health;
-
     private void Awake()
     {
         instance = this;
@@ -87,10 +84,6 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }*/
-    }
-    public void ChangeHealth(float gap)
-    {
-        health += gap;
     }
 
     private void Flip()
