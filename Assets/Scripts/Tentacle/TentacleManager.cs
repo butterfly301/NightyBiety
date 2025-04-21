@@ -8,7 +8,8 @@ public class TentacleManager : MonoBehaviour
 {
     public Transform player;
     private Camera mainCamera;
-    public Tentacle[] tentacles;
+    //public Tentacle[] tentacles;
+    public Tentacle tentacle;
     // 8方向枚举
     public enum FourDirection
     {
@@ -32,40 +33,43 @@ public class TentacleManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            switch (GetCurrentDirection())
-            {
-                case FourDirection.UpRight:
-                    tentacles[GetRandomInt(0, 1, 2)].ChangeState("Grab");
-                    /*tentacles[0].ChangeState("Grab");
-                    tentacles[1].ChangeState("Grab");
-                    tentacles[2].ChangeState("Grab");*/
-                    break;
-                case FourDirection.DownRight:
-                    tentacles[GetRandomInt(0, 6, 7)].ChangeState("Grab");
-                    /*tentacles[0].ChangeState("Grab");
-                    tentacles[6].ChangeState("Grab");
-                    tentacles[7].ChangeState("Grab");*/
-                    break;
-                case FourDirection.DownLeft:
-                    tentacles[GetRandomInt(4, 5, 6)].ChangeState("Grab");
-                    /*tentacles[4].ChangeState("Grab");
-                    tentacles[5].ChangeState("Grab");
-                    tentacles[6].ChangeState("Grab");*/
-                    break;
-                case FourDirection.UpLeft:
-                    tentacles[GetRandomInt(2, 3, 4)].ChangeState("Grab");
-                    /*tentacles[2].ChangeState("Grab");
-                    tentacles[3].ChangeState("Grab");
-                    tentacles[4].ChangeState("Grab");*/
-                    break;
-            }
+            tentacle.gameObject.SetActive(true);
+            tentacle.ChangeState("Grab");
+            // switch (GetCurrentDirection())
+            // {
+            //     case FourDirection.UpRight:
+            //         tentacles[GetRandomInt(0, 1, 2)].ChangeState("Grab");
+            //         /*tentacles[0].ChangeState("Grab");
+            //         tentacles[1].ChangeState("Grab");
+            //         tentacles[2].ChangeState("Grab");*/
+            //         break;
+            //     case FourDirection.DownRight:
+            //         tentacles[GetRandomInt(0, 6, 7)].ChangeState("Grab");
+            //         /*tentacles[0].ChangeState("Grab");
+            //         tentacles[6].ChangeState("Grab");
+            //         tentacles[7].ChangeState("Grab");*/
+            //         break;
+            //     case FourDirection.DownLeft:
+            //         tentacles[GetRandomInt(4, 5, 6)].ChangeState("Grab");
+            //         /*tentacles[4].ChangeState("Grab");
+            //         tentacles[5].ChangeState("Grab");
+            //         tentacles[6].ChangeState("Grab");*/
+            //         break;
+            //     case FourDirection.UpLeft:
+            //         tentacles[GetRandomInt(2, 3, 4)].ChangeState("Grab");
+            //         /*tentacles[2].ChangeState("Grab");
+            //         tentacles[3].ChangeState("Grab");
+            //         tentacles[4].ChangeState("Grab");*/
+            //         break;
+            // }
         }
         if (Input.GetMouseButtonUp(1))
         {
-            for (int i = 0; i < tentacles.Length; i++)
-            {
-                tentacles[i].ChangeState("Walk");
-            }
+            //for (int i = 0; i < tentacles.Length; i++)
+            //{
+            //    tentacles[i].ChangeState("Walk");
+            //}
+            tentacle.ChangeState("Walk");
         }
     }
     
@@ -109,18 +113,20 @@ public class TentacleManager : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
-                for (int i = 0; i < tentacles.Length; i++)
-                {
-                    tentacles[i].ChangeState("Eat");
-                }
+                tentacle.ChangeState("Eat");
+                // for (int i = 0; i < tentacles.Length; i++)
+                // {
+                //     tentacles[i].ChangeState("Eat");
+                // }
             }
 
             if (Input.GetKeyUp(KeyCode.E))
             {
-                for (int i = 0; i < tentacles.Length; i++)
-                {
-                    tentacles[i].ChangeState("Walk");
-                }
+                tentacle.ChangeState("Walk");
+                // for (int i = 0; i < tentacles.Length; i++)
+                // {
+                //     tentacles[i].ChangeState("Walk");
+                // }
             }
         }
     }
@@ -128,9 +134,10 @@ public class TentacleManager : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Food"))
-            for (int i = 0; i < tentacles.Length; i++)
-            {
-                tentacles[i].ChangeState("Walk");
-            }
+            tentacle.ChangeState("Walk");
+            // for (int i = 0; i < tentacles.Length; i++)
+            // {
+            //     tentacles[i].ChangeState("Walk");
+            // }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using TwoBitMachines.FlareEngine;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -118,6 +119,18 @@ public class PlayerController : MonoBehaviour
             }
             else if (!facingRight)
                 rb.AddForce(Vector2.right * recoilForce, ForceMode2D.Force);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            var health = other.GetComponent<Health>();
+            if (health != null)
+            {
+                health.currentValue -= 1;
+            }
         }
     }
 }
