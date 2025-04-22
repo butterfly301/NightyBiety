@@ -19,12 +19,13 @@ public class Ice : MonoBehaviour
     Vector3 originRot;
     public void drop()
     {
-        //¿ªÊ¼²¥·Å¶¯»­
+        shakeStrength = 0;
+        //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Å¶ï¿½ï¿½ï¿½
         for (int i = 0; i <icePieces.Length; i++)
         {
             icePieces[i].GetComponent<Animator>().SetBool("drop", true);
         }
-        Destroy(gameObject);
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
     }
     // Update is called once per frame
     void Update()

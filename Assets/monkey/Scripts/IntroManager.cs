@@ -21,10 +21,7 @@ public class IntroManager : MonoBehaviour
         instance = this;
         gamePlayerIntroductionShowTime2 = gamePlayerIntroductionShowTime = 0;
     }
-    void Start()
-    {
-        gamePlayerIntroduction = GameObject.Find("gamePlayerIntroduction").GetComponent<TMP_Text>();
-    }
+   
     /// <summary>
     /// ��������ָ��
     /// </summary>
@@ -47,7 +44,7 @@ public class IntroManager : MonoBehaviour
         if (startShowgamePlayerIntroduction)
         {
             gamePlayerIntroductionShowTime += Time.deltaTime;
-            if(gamePlayerIntroductionShowTime > 8f)
+            if(gamePlayerIntroductionShowTime > 4f)
             {
                 startShowgamePlayerIntroduction = false;
                 INTRO1.SetActive(false);
@@ -56,7 +53,7 @@ public class IntroManager : MonoBehaviour
         if (startShowgamePlayerIntroduction2)
         {
             gamePlayerIntroductionShowTime2 += Time.deltaTime;
-            if (gamePlayerIntroductionShowTime2 > 8f)
+            if (gamePlayerIntroductionShowTime2 > 4f)
             {
                 startShowgamePlayerIntroduction2 = false;
                 INTRO2.SetActive(false);
