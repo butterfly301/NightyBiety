@@ -13,6 +13,7 @@ public class Hook : MonoBehaviour
         if (isGrabed)
         {
             grabbedItemTransform.transform.position = transform.position;
+            grabbedItemTransform.transform.rotation = transform.rotation;
         }
         
         if (Input.GetMouseButtonUp(1))

@@ -1,10 +1,10 @@
+using System;
 using TwoBitMachines.FlareEngine;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public static PlayerController instance;
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce ;
@@ -20,11 +20,10 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private float moveInput;
     private bool facingRight = true;
-
+    
 
     private void Awake()
     {
-        instance = this;
         rb = GetComponent<Rigidbody2D>();
         firearm = GetComponentInChildren<Firearm>();
     }
@@ -108,6 +107,7 @@ public class PlayerController : MonoBehaviour
         }
     }
     
+    
 
     void RecoilWhenShoot()
     {
@@ -119,6 +119,18 @@ public class PlayerController : MonoBehaviour
             }
             else if (!facingRight)
                 rb.AddForce(Vector2.right * recoilForce, ForceMode2D.Force);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            var health = other.GetComponent<Health>();
+            if (health != null)
+            {
+                health.currentValue -= 1;
+            }
         }
     }
 }

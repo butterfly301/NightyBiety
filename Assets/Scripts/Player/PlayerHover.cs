@@ -100,11 +100,11 @@ public class PlayerHover : MonoBehaviour
         {
             // 恢复原始重力
             rb.gravityScale = 0;
-            
             // 应用力
-            rb.velocity = new Vector2(
+            Vector2 force = new Vector2(
                 rb.velocity.x, 
-                Mathf.Lerp(rb.velocity.y, hoverForce/30, hoverSmoothness * Time.fixedDeltaTime));
+                Mathf.Lerp(rb.velocity.y, hoverForce, hoverSmoothness * Time.fixedDeltaTime));
+            rb.AddForce(force, ForceMode2D.Force);
         }
         else
         {

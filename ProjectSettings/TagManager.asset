@@ -62,15 +62,9 @@ TagManager:
   - name: Hide
     uniqueID: 3558103599
     locked: 0
-  - name: BackScene
-    uniqueID: 3324957341
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Front
     uniqueID: 483194477
-    locked: 0
-  - name: FrontSence
-    uniqueID: 257413699
     locked: 0
