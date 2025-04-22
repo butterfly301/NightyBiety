@@ -18,7 +18,8 @@ public class trigger : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!first)
+        if (!first && collision.gameObject
+            .name == "Player")
         {
             first = true;
             IntroManager.instance.ShowSecondStartMessage();

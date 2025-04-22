@@ -6,11 +6,11 @@ using TMPro;
 public class IntroManager : MonoBehaviour
 {
 
-    TMP_Text gamePlayerIntroduction;
+    public TMP_Text gamePlayerIntroduction;
     float gamePlayerIntroductionShowTime = 0;
     bool startShowgamePlayerIntroduction = false;
 
-    TMP_Text gamePlayerIntroduction2;
+    public TMP_Text gamePlayerIntroduction2;
     float gamePlayerIntroductionShowTime2 = 0;
     bool startShowgamePlayerIntroduction2 = false;
     public static IntroManager instance;

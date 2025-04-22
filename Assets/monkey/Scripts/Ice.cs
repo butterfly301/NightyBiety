@@ -7,6 +7,7 @@ public class Ice : MonoBehaviour
 {
     public float shakeStrength;
     public float damage;
+    public GameObject[] icePieces;
     void Start()
     {
         originRot = transform.rotation.eulerAngles;
@@ -16,6 +17,15 @@ public class Ice : MonoBehaviour
     public float duration;
     int dir = 0;
     Vector3 originRot;
+    public void drop()
+    {
+        //开始播放动画
+        for (int i = 0; i <icePieces.Length; i++)
+        {
+            icePieces[i].GetComponent<Animator>().SetBool("drop", true);
+        }
+        Destroy(gameObject);
+    }
     // Update is called once per frame
     void Update()
     {
