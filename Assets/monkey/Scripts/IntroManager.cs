@@ -6,10 +6,12 @@ using TMPro;
 public class IntroManager : MonoBehaviour
 {
 
+    public GameObject INTRO1;
     public TMP_Text gamePlayerIntroduction;
     float gamePlayerIntroductionShowTime = 0;
     bool startShowgamePlayerIntroduction = false;
 
+    public GameObject INTRO2;
     public TMP_Text gamePlayerIntroduction2;
     float gamePlayerIntroductionShowTime2 = 0;
     bool startShowgamePlayerIntroduction2 = false;
@@ -17,23 +19,26 @@ public class IntroManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        gamePlayerIntroductionShowTime2 = gamePlayerIntroductionShowTime = 0;
     }
     void Start()
     {
         gamePlayerIntroduction = GameObject.Find("gamePlayerIntroduction").GetComponent<TMP_Text>();
     }
     /// <summary>
-    /// ³öÏÖÐÂÊÖÖ¸Òý
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
     /// </summary>
     public void ShowStartMessage()
     {
-        gamePlayerIntroduction.gameObject.SetActive(true);
+       // gamePlayerIntroduction.gameObject.SetActive(true);
+        INTRO1.SetActive(true);
         startShowgamePlayerIntroduction = true;
     }
 
     public void ShowSecondStartMessage()
     {
-        gamePlayerIntroduction2.gameObject.SetActive(true);
+        INTRO2.SetActive(true);
+       // gamePlayerIntroduction2.gameObject.SetActive(true);
         startShowgamePlayerIntroduction2 = true;
     }
     // Update is called once per frame
@@ -45,7 +50,7 @@ public class IntroManager : MonoBehaviour
             if(gamePlayerIntroductionShowTime > 8f)
             {
                 startShowgamePlayerIntroduction = false;
-                gamePlayerIntroduction.gameObject.SetActive(false);
+                INTRO1.SetActive(false);
             }
         }
         if (startShowgamePlayerIntroduction2)
@@ -54,7 +59,7 @@ public class IntroManager : MonoBehaviour
             if (gamePlayerIntroductionShowTime2 > 8f)
             {
                 startShowgamePlayerIntroduction2 = false;
-                gamePlayerIntroduction2.gameObject.SetActive(false);
+                INTRO2.SetActive(false);
             }
         }
     }

@@ -22,7 +22,7 @@ public class trigger : MonoBehaviour
             .name == "Player")
         {
             first = true;
-            IntroManager.instance.ShowSecondStartMessage();
+            IntroManager.instance.ShowStartMessage();
         }
     }
 }
