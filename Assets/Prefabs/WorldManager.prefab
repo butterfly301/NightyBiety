@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7533283591182988191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7859775339512110826}
+  - component: {fileID: 8146255636659512482}
+  m_Layer: 0
+  m_Name: WorldManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7859775339512110826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533283591182988191}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8146255636659512482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533283591182988191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a08a1d5b17c9d44cbab2dda40a59cb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pause: {fileID: 11400000, guid: 4bd152e36988073458bda929552ca3db, type: 2}
+  levelNumber: 0
+  isSaveMenu: 0
+  onAwake:
+    m_PersistentCalls:
+      m_Calls: []
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onPause:
+    m_PersistentCalls:
+      m_Calls: []
+  onUnpause:
+    m_PersistentCalls:
+      m_Calls: []
+  onResetAll:
+    m_PersistentCalls:
+      m_Calls: []
+  worldEvents:
+  - {fileID: 11400000, guid: eb81ff3741ab4164995ce24cc9179163, type: 2}
+  - {fileID: 11400000, guid: a7098a96c00d64b47be2bc0365aff6fb, type: 2}
+  save:
+    slot: []
+    currentSlot: 0
+    gameName: NIghtEat
+    navigate: 0
+    marked: 0
+    delete: 0
+    sceneDoor: 0
+    sceneDoorPlayerDirection: 0
+  createSignal: eventName
+  gameNameRef: NIghtEat
+  createWorldEvent: 0
+  foldOut: 0
+  worldFoldOut: 0
+  deleteFoldOut: 0
+  onAwakeFoldOut: 0
+  onStartFoldOut: 0
+  onPauseFoldOut: 0
+  onUnpauseFoldOut: 0
+  onResetAllFoldOut: 0
+  saveSlotsFoldOut: 0
+  navigateRef: 0
+  viewDebug: 0
