@@ -21,11 +21,13 @@ public class PlayerController : MonoBehaviour
     private float moveInput;
     private bool facingRight = true;
     
+    public static PlayerController instance;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         firearm = GetComponentInChildren<Firearm>();
+        instance = this;
     }
 
     private void Update()
