@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TwoBitMachines.FlareEngine;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ public class Ice : MonoBehaviour
     public float shakeStrength;
     public float damage;
     public GameObject[] icePieces;
+    public Vector3 finalPosition;
+    public int animationType;
     void Start()
     {
         originRot = transform.rotation.eulerAngles;
@@ -19,13 +22,26 @@ public class Ice : MonoBehaviour
     Vector3 originRot;
     public void drop()
     {
-        shakeStrength = 0;
-        //��ʼ���Ŷ���
-        for (int i = 0; i <icePieces.Length; i++)
+        if (animationType == 0)
         {
-            icePieces[i].GetComponent<Animator>().SetBool("drop", true);
+                    gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                    float y = transform.position.y;
+                    
+                    shakeStrength = 0;
+                    for (int i = 0; i <icePieces.Length; i++)
+                    {
+                        if (icePieces[i].GetComponent<Animator>())
+                            
+                        icePieces[i].GetComponent<Animator>().SetBool("drop", true);
+                    }Tweener tween =  transform.DOMoveY(y+finalPosition.y,0.2f,false);
         }
-        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        else
+        {    shakeStrength = 0;
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<Animator>().SetBool("drop",true);
+        }
+      
+        
     }
     // Update is called once per frame
     void Update()

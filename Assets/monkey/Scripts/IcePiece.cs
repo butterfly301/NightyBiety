@@ -24,7 +24,9 @@ public class IcePiece : MonoBehaviour
             Debug.Log(other.gameObject.name);
                    if (other.gameObject.name == "Player")
                    {
-                       var health = PlayerController.instance.gameObject.GetComponent<Health>();
+                      // Debug.Log(other.gameObject.name);
+                       //Debug.Log(PlayerController.instance.gameObject.name);
+                       var health = other.gameObject.GetComponent<Health>();
                        health.SetValue(health.GetValue() - damage);
                        Debug.Log("damage");
                        

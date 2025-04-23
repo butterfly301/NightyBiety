@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class trigger2 : MonoBehaviour
+public class DropTrigger : MonoBehaviour
 {
     bool first = false;
 
-    public GameObject ice1;
+    public GameObject ice;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +24,7 @@ public class trigger2 : MonoBehaviour
                 .name == "Player")
         {
             first = true;
-            IntroManager.instance.ShowSecondStartMessage();
-            ice1.GetComponent<Ice>().drop();
-            
+            ice.GetComponent<Ice>().drop();
         }
     }
 }
