@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: Dash
   m_EditorClassIdentifier: 
   buttonName: Dash
-  type: 1
+  type: 0
   mouse: 1
-  key: 97
+  key: 304
+  axisName: 
   bindings: []
+  axisToRead: 0
+  maxThreshold: 99
+  minThreshold: -99
   foldOut: 0
