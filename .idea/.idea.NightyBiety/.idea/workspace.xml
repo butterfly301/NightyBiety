@@ -5,129 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc865e02-301c-45d1-bf89-02e8c4687cb5" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NightyBiety/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NightyBiety/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/Empty.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/Empty.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeEat.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeEat.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeJumpDown.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeJumpDown.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeJumpDownRight.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeJumpDownRight.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeJumpUp.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeJumpUp.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeJumpUpRight.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeJumpUpRight.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeJustPerform.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eye/EyeJustPerform.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eyelid.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Eyelid.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/GrabOnItem.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/GrabOnItem/ReverseClip.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/GrabOnItem/ReverseClip.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/GrabOnItem/forwardClip.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/GrabOnItem/forwardClip.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Tentacle.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Tentacle/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Tentacle/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Tentacle/Tentacle.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Tentacle/Tentacle.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Tentacle/Walk.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Tentacle/Walk.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Cake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Cake.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/Eat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/Eat.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/EatEye.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/EatEye.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/Player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/Player.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/Tentacle.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/Tentacle.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/sprite.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (2).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (3).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (4).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (4).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (5).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (5).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (6).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/TentacleGrab/tentacle (6).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/playerEye.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/playerEye.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/纹理.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/Player/纹理.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Player.physicsMaterial2D" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Player.physicsMaterial2D.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/SnowMonster.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/SnowMonster.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerRight.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerRight.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WorldManager.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WorldManager.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MergeScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MergeScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ice.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ice.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/k1-tunnel.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/k1-tunnel.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hurt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hurt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/BeGrabbed.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/BeGrabbed.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CamaraFocus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CamaraFocus.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Eat.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Eat.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/EyeAnimation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/EyeAnimation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/EyeMove.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/EyeMove.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/FollowPlayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/FollowPlayer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHover.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHover.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tentacle.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tentacle/Hook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tentacle/Hook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tentacle/Tentacle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tentacle/Tentacle.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tentacle/TentacleManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tentacle/TentacleManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBitMachines/FlareEngine/AssetsFolder/Inputs/Dash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBitMachines/FlareEngine/AssetsFolder/Inputs/Dash.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/k1-tunnel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/k1-tunnel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,9 +21,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GrabItem/Food.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -154,35 +30,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="附加到 Unity 编辑器.附加到 Unity 编辑器">
     <configuration name="启动 Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Program Files (x86)\2022.3.52f1c1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\UnityVersionEditor\2022.3.52f1c1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\dyh\NightyBiety -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\dyh\NightyBiety" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
       <method v="2" />
     </configuration>
     <configuration name="单元测试(批处理模式)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Program Files (x86)\2022.3.52f1c1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\UnityVersionEditor\2022.3.52f1c1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\dyh\NightyBiety -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\dyh\NightyBiety" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
       <method v="2" />
     </configuration>
     <configuration name="附加到 Unity 编辑器" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -196,6 +78,7 @@
       <option name="selectedOptions">
         <list />
       </option>
+      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="附加到 Unity 编辑器并运行" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -209,10 +92,10 @@
       <option name="selectedOptions">
         <list />
       </option>
+      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="dc865e02-301c-45d1-bf89-02e8c4687cb5" name="更改" comment="" />
@@ -222,11 +105,6 @@
       <updated>1745329693154</updated>
       <workItem from="1745329694395" duration="522000" />
       <workItem from="1745330239665" duration="4000" />
-      <workItem from="1745462027658" duration="146000" />
-      <workItem from="1745463085673" duration="110000" />
-      <workItem from="1745463216951" duration="582000" />
-      <workItem from="1745463830610" duration="1536000" />
-      <workItem from="1745465772089" duration="1075000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -277,5 +155,23 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="1" />
     <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
