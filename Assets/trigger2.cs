@@ -7,9 +7,6 @@ public class trigger2 : MonoBehaviour
     bool first = false;
 
     public GameObject ice1;
-    public GameObject ice2;
-    public GameObject ice3;
-    public GameObject ice4;
     // Start is called before the first frame update
     void Start()
     {

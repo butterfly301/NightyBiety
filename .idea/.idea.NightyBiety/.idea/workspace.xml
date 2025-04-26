@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc865e02-301c-45d1-bf89-02e8c4687cb5" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/k1-tunnel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/k1-tunnel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="dc865e02-301c-45d1-bf89-02e8c4687cb5" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,10 +13,31 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="FairyOnTheTree" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "monkey2627"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/butterfly301/NightyBiety.git",
+    "accountId": "7582b052-7e5d-44b6-a040-bb58ed522da9"
+  }
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/Scripts/Ice.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/Scripts/IntroManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/animation/ice1/01-1.anim" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/trigger2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -35,12 +53,13 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "final",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -104,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745329693154</updated>
       <workItem from="1745329694395" duration="522000" />
-      <workItem from="1745330239665" duration="4000" />
+      <workItem from="1745330239665" duration="16131000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -114,7 +133,31 @@
       <option name="project" value="LOCAL" />
       <updated>1745329826925</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加场景预制体">
+      <option name="closed" value="true" />
+      <created>1745330272803</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745330272803</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加ice4动画和intro">
+      <option name="closed" value="true" />
+      <created>1745333686316</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745333686316</updated>
+    </task>
+    <task id="LOCAL-00004" summary="合并到场景mergeScene并更改灯效">
+      <option name="closed" value="true" />
+      <created>1745423699823</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745423699823</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +182,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/找灯" />
                       </list>
                     </value>
                   </entry>
@@ -154,7 +197,10 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="增加场景预制体" />
+    <MESSAGE value="添加ice4动画和intro" />
+    <MESSAGE value="合并到场景mergeScene并更改灯效" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并到场景mergeScene并更改灯效" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
