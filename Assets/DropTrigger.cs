@@ -13,7 +13,7 @@ public class DropTrigger : MonoBehaviour
                 .name == "Player")
         {
             first = true;
-            ice.GetComponent<Ice>().drop();
+            ice.GetComponent<Ice>().StartShake();
         }
     }
 }
