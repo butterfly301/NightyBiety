@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
 using TwoBitMachines.FlareEngine;
 using UnityEngine;
 
@@ -25,20 +24,20 @@ public class Ice : MonoBehaviour
         if (animationType == 0)
         {
                     gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                    float y = transform.position.y;
-                    
                     shakeStrength = 0;
                     for (int i = 0; i <icePieces.Length; i++)
                     {
                         if (icePieces[i].GetComponent<Animator>())
                             
                         icePieces[i].GetComponent<Animator>().SetBool("drop", true);
-                    }Tweener tween =  transform.DOMoveY(y+finalPosition.y,0.2f,false);
+                    }
         }
         else
-        {    shakeStrength = 0;
+        {    
+gameObject.GetComponent<Animator>().SetBool("drop",true);
+			shakeStrength = 0;
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            gameObject.GetComponent<Animator>().SetBool("drop",true);
+          
         }
       
         

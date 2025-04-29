@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc865e02-301c-45d1-bf89-02e8c4687cb5" name="更改" comment="" />
+    <list default="true" id="dc865e02-301c-45d1-bf89-02e8c4687cb5" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NightyBiety/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NightyBiety/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DropTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DropTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MergeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MergeScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/Scripts/Ice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/Scripts/Ice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/Scripts/IcePiece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/Scripts/IcePiece.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice3.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice3.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/碎片04_12.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/碎片04_12.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/碎片04_13.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/碎片04_13.controller" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,26 +28,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "monkey2627"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;monkey2627&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/butterfly301/NightyBiety.git",
-    "accountId": "7582b052-7e5d-44b6-a040-bb58ed522da9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/butterfly301/NightyBiety.git&quot;,
+    &quot;accountId&quot;: &quot;7582b052-7e5d-44b6-a040-bb58ed522da9&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/Scripts/Ice.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/Scripts/IntroManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/animation/ice1/01-1.anim" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/monkey/Scripts/IcePiece.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/trigger2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/dyh/NightyBiety/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/dyh/NightyBiety/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/dyh/NightyBiety/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -48,21 +53,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "final",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;final&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="附加到 Unity 编辑器.附加到 Unity 编辑器">
     <configuration name="启动 Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\UnityVersionEditor\2022.3.52f1c1\Editor\Unity.exe" />
@@ -124,6 +129,8 @@
       <updated>1745329693154</updated>
       <workItem from="1745329694395" duration="522000" />
       <workItem from="1745330239665" duration="16131000" />
+      <workItem from="1745767098664" duration="89000" />
+      <workItem from="1745770214919" duration="2428000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
