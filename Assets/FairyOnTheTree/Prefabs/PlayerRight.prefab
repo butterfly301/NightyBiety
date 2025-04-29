@@ -537,6 +537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3036269120746296183}
   - component: {fileID: 7146663121239511528}
+  - component: {fileID: 2556815954820801683}
   m_Layer: 9
   m_Name: Eat
   m_TagString: Untagged
@@ -566,7 +567,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2818846812059738060}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 239fcbc5d71d7ab4f81a2ea5b0efadeb, type: 3}
   m_Name: 
@@ -745,6 +746,18 @@ MonoBehaviour:
   turnOffNearWall: 0
   offOnShoot: 0
   stopType: 0
+--- !u!114 &2556815954820801683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2818846812059738060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9aa103ebe0133b4d922f96f05eb6d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3121001021830485977
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,7 +861,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 483194477
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 132031722, guid: e77b9fe4c9ed7fe4580dbe0e74c08484, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -954,7 +967,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 483194477
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 882188323, guid: e77b9fe4c9ed7fe4580dbe0e74c08484, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -994,7 +1007,13 @@ GameObject:
   - component: {fileID: 2637481994307827508}
   - component: {fileID: 8442319604022847851}
   - component: {fileID: 2542564881299660611}
+  - component: {fileID: 1749885762781461577}
   - component: {fileID: 7245577169341012352}
+  - component: {fileID: 8433548147468887533}
+  - component: {fileID: 2927879134848770982}
+  - component: {fileID: 4258579922999754595}
+  - component: {fileID: 2436668119515619953}
+  - component: {fileID: 6075060632399689528}
   m_Layer: 9
   m_Name: PlayerRight
   m_TagString: Player
@@ -1063,7 +1082,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 483194477
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 404943965, guid: 71b480ec26f2f8141bf8c16d9c980461, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1136,7 +1155,7 @@ MonoBehaviour:
   isHealth: 0
   initialized: 0
   variableName: Player
-  currentValue: 10
+  currentValue: 5
   minValue: 0
   maxValue: 10
   save: 0
@@ -1153,7 +1172,19 @@ MonoBehaviour:
       m_Calls: []
   onMinValue:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8442319604022847851}
+        m_TargetAssemblyTypeName: TwoBitMachines.TwoBitSprite.SpriteEngine, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onMaxValue:
     m_PersistentCalls:
       m_Calls: []
@@ -1176,7 +1207,7 @@ MonoBehaviour:
     value: 0
   foldOut: 1
   eventFoldOut: 1
-  minFoldOut: 0
+  minFoldOut: 1
   maxFoldOut: 0
   changedFoldOut: 0
   increasedFoldOut: 0
@@ -1243,6 +1274,14 @@ MonoBehaviour:
       foldOut: 0
       signalIndex: 0
     branch:
+    - nodes: []
+      sprite: Death
+      signal: Death
+      add: 0
+      active: 0
+      delete: 0
+      foldOut: 0
+      signalIndex: 0
     - nodes: []
       sprite: Eat
       signal: Eat
@@ -1344,13 +1383,14 @@ MonoBehaviour:
     - onGround
     - jumping
     - Eat
+    - Death
     search: 
     active: 0
     createState: 0
     stateFoldOut: 1
     signalFoldOut: 1
     signalIndex: 0
-    scrollIndex: 74
+    scrollIndex: 75
     signalRef:
       all:
       - name: alwaysTrue
@@ -1612,6 +1652,9 @@ MonoBehaviour:
       - name: Eat
         use: 1
         canDelete: 1
+      - name: Death
+        use: 1
+        canDelete: 1
       foldOutVelocity: 0
       foldOutWall: 0
       foldOutWorld: 0
@@ -1654,8 +1697,8 @@ MonoBehaviour:
   propertyIndex: 0
   rendererSprite: {fileID: 0}
   settingRenderer: 0
-  spriteIndex: 6
-  scrollIndex: 0
+  spriteIndex: 7
+  scrollIndex: 7
   sprites:
   - property: []
     frame:
@@ -2204,6 +2247,191 @@ MonoBehaviour:
     addTransition: 0
     deleteTransition: 0
     canDelete: 0
+  - property: []
+    frame:
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 1720124664, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 1056812393, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 795641348, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: -1180052657, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 1334097004, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 11437196, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: -975509139, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 1430220093, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 1552054076, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: -881474420, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 613500474, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 1249821534, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: -1313782139, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 1391435508, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 1645609650, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 1295718032, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 955950093, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 647302222, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 1835839073, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    - onEnterFrame:
+        m_PersistentCalls:
+          m_Calls: []
+      sprite: {fileID: 25920707, guid: 48a9879a9bd977d46af62aa7eeec9108, type: 3}
+      rate: 0.1
+      add: 0
+      delete: 0
+      eventFoldOut: 0
+    onLoopOnce:
+      m_PersistentCalls:
+        m_Calls: []
+    loopStartIndex: 0
+    loopOnce: 1
+    name: Death
+    canSync: 0
+    syncID: 0
+    lastFrame: 0
+    rememberLastFrame: 0
+    randomAnimations: []
+    isRandom: 0
+    transition: []
+    hasTransition: 0
+    hasChangedDirection: 0
+    active: 0
+    frameIndex: 19
+    signalIndex: 0
+    globalRate: 10
+    transitionFoldOut: 0
+    addTransition: 0
+    deleteTransition: 0
+    canDelete: 0
   spriteSwap: {fileID: 0}
   references:
     version: 2
@@ -2226,7 +2454,7 @@ MonoBehaviour:
   exception: []
   foldOut: 0
   delete: 0
-  editMask: 1
+  editMask: 0
   deleteAsk: 0
   viewScript: 0
   tempName: 
@@ -2256,6 +2484,77 @@ MonoBehaviour:
   eventFoldOut: 0
   jumpFoldOut: 0
   forceJump: 0
+--- !u!114 &1749885762781461577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328638248471477632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67afe2f3c6d1d7e448bc34d5914946cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 1
+  abilityName: Dash
+  pause: 0
+  exception: []
+  foldOut: 1
+  delete: 0
+  editMask: 0
+  deleteAsk: 0
+  viewScript: 0
+  tempName: 
+  foldOuts: 
+  type: 1
+  taps: 1
+  directionType: 0
+  mustBeOnGround: 1
+  nullifyGravity: 0
+  canTakeDamage: 0
+  crouch: 0
+  exitOnJump: 0
+  dashInPlace: 0
+  changeDirectionOnWall: 0
+  airDashLimit: 0
+  crouchHeight: 0.5
+  time: 0.2
+  coolDown: 1
+  dashDistance: 10
+  tapThreshold: 0.35
+  up: None
+  down: None
+  left: None
+  right: Right
+  extraDashButton: Dash
+  damage: 1
+  horizontalJump: 0
+  damageLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  canDealDamage: 0
+  exitOnContact: 0
+  exitLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  onStartWE: 
+  onEndWE: 
+  onDashRate: 0
+  worldEffect: 
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onDash:
+    m_PersistentCalls:
+      m_Calls: []
+  eventsFoldOut: 0
+  dashFoldOut: 0
+  onStartFoldOut: 0
+  onEndFoldOut: 0
 --- !u!114 &7245577169341012352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2305,6 +2604,7 @@ MonoBehaviour:
   setVelocity: {x: 0, y: 0}
   ability:
   - {fileID: 2542564881299660611}
+  - {fileID: 1749885762781461577}
   priority: []
   inputs:
     inputSO:
@@ -2315,6 +2615,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 67749334196a0ae42a4c5b0e4aeb0d28, type: 2}
     - {fileID: 11400000, guid: 7b219fa909eed644aa708d99e7916747, type: 2}
     - {fileID: 11400000, guid: 2639e4d63701c1c459eecaf5dd94dd9b, type: 2}
+    - {fileID: 11400000, guid: ebf8ccc2d603c4a45b83872b94ef12ce, type: 2}
   abilities:
     walk:
       walk: 1
@@ -2365,7 +2666,7 @@ MonoBehaviour:
       onCoolDownFoldOut: 0
       useRightOnly: 0
       useLeftOnly: 0
-      foldOut: 0
+      foldOut: 1
       eventFoldOut: 0
       groundFoldOut: 0
       notGroundFoldOut: 0
@@ -2393,6 +2694,535 @@ MonoBehaviour:
   collisionFoldOut: 0
   priorityFoldOut: 1
   clearInputs: 0
+--- !u!114 &8433548147468887533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328638248471477632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a6abfb407f89240b4fe45a1f0a99e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  world:
+    climbSlopes: 0
+    rotateToSlope: 0
+    rectifyInAir: 0
+    collideWorldOnly: 0
+    horizontalCorners: 0
+    useMovingPlatform: 0
+    rotateToWall: 0
+    useBridges: 1
+    jumpThroughEdge: 1
+    maxSlopeAngle: 45
+    rotateRate: 0.5
+    crushedWE: 
+    skipDownEdge: 0
+    onCrushed:
+      m_PersistentCalls:
+        m_Calls: []
+    box:
+      rays: {x: 3, y: 2}
+    rotateTo: 0
+    foldOut: 0
+    eventsFoldOut: 0
+    crushedFoldOut: 0
+  signals:
+    spriteEngine: {fileID: 0}
+  turnOffSignals: 0
+  pushBackActive: 0
+  executeInLateUpdate: 0
+  mainFoldOut: 0
+  canUseTool: 1
+  onToolSet:
+    m_PersistentCalls:
+      m_Calls: []
+  setVelocity: {x: 0, y: 0}
+  root: {fileID: 2927879134848770982}
+  thisIsPlayer: 0
+  resetToActive: 0
+  movingPlatformGravity: 0
+  gravity:
+    jumpHeight: 4
+    jumpTime: 0.75
+    multiplier: 1.5
+    terminalVelocity: 40
+  damage:
+    layer:
+      serializedVersion: 2
+      m_Bits: 0
+    direction: 0
+    canDealDamage: 0
+    pauseTimer: 0
+    damage: 1
+    force: 1
+    counter: 0
+    damageFoldOut: 0
+    pauseDamage: 0
+    pauseDamageTimer: 0
+  data: []
+  tempChildren: []
+  units: []
+  inspectNode: {fileID: 0}
+  nodeMessage:
+    position: {x: 0, y: 0}
+    size: {x: 0, y: 0}
+    message: 
+    isDragged: 0
+  oldGUIMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
+  tempNameType: 
+  inspectNameType: 
+  barIndex: 0
+  tempUnits: 0
+  menuIndex: 0
+  deleteIndex: 0
+  signalIndex: -1
+  panX: 0
+  panY: 0
+  snapToGrid: 10
+  scaling: 1
+  add: 0
+  active: 0
+  foldOut: 0
+  foundNodes: 0
+  settingsFoldOut: 0
+  showNodeMessage: 0
+  isSelectingNodes: 0
+  blackboardFoldOut: 0
+  collisionSettings: 0
+  aNodeIsBeingDragged: 0
+  window: {fileID: 0}
+  selectSize: {x: 0, y: 0}
+  selectPosition: {x: 0, y: 0}
+  ScrollPosition: {x: 0, y: 0}
+  startHoldPoint: {x: 0, y: 0}
+  stateActionIndex: {x: 0, y: 2}
+  state:
+  - action: []
+    stateName: Wait
+    defaultSignal: Animation Signal
+    cantInterrupt: 0
+    useSignal: 0
+    enabled: 0
+    childIndex: 0
+    type: 0
+    showStateExtra: 0
+    editName: 0
+    signal: 0
+    changeState: 0
+    deleteAsk: 0
+    foldOut: 0
+    active: 0
+    delete: 0
+    add: 0
+    menu: 1
+    signalIndex: 0
+  - action:
+    - node: {fileID: 4258579922999754595}
+      onSuccess: Wait
+      onFailure: Wait
+      goToSuccess: 0
+      goToFailure: 0
+      foldOut: 0
+      deleteAsk: 0
+      delete: 0
+      add: 0
+    - node: {fileID: 2436668119515619953}
+      onSuccess: Reset
+      onFailure: Wait
+      goToSuccess: 1
+      goToFailure: 0
+      foldOut: 0
+      deleteAsk: 0
+      delete: 0
+      add: 0
+    stateName: Killed
+    defaultSignal: Animation Signal
+    cantInterrupt: 0
+    useSignal: 0
+    enabled: 0
+    childIndex: 0
+    type: 0
+    showStateExtra: 0
+    editName: 0
+    signal: 0
+    changeState: 0
+    deleteAsk: 0
+    foldOut: 0
+    active: 0
+    delete: 0
+    add: 0
+    menu: 1
+    signalIndex: 0
+  - action:
+    - node: {fileID: 6075060632399689528}
+      onSuccess: Wait
+      onFailure: Wait
+      goToSuccess: 1
+      goToFailure: 1
+      foldOut: 0
+      deleteAsk: 0
+      delete: 0
+      add: 0
+    stateName: Reset
+    defaultSignal: Animation Signal
+    cantInterrupt: 0
+    useSignal: 0
+    enabled: 0
+    childIndex: 0
+    type: 0
+    showStateExtra: 0
+    editName: 0
+    signal: 0
+    changeState: 0
+    deleteAsk: 0
+    foldOut: 0
+    active: 0
+    delete: 0
+    add: 0
+    menu: 1
+    signalIndex: 0
+  alwaysState: []
+  resetState:
+    action: []
+    stateName: State Name
+    defaultSignal: Signal
+    cantInterrupt: 0
+    useSignal: 0
+    enabled: 1
+    childIndex: 0
+    type: 0
+    showStateExtra: 0
+    editName: 0
+    signal: 0
+    changeState: 0
+    deleteAsk: 0
+    foldOut: 0
+    active: 0
+    delete: 0
+    add: 0
+    menu: 1
+    signalIndex: -1
+  resetToFirst: 0
+--- !u!114 &2927879134848770982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328638248471477632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1353c2b8524781a42a64ea27a9fd7d10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeSetup: 0
+  nodeState: 0
+  nodeType: 0
+  nodeParent: {fileID: 0}
+  completed: 0
+  nameType: Root
+  fsmChild: 
+  fsmIndex: 0
+  selectCounter: 10
+  failedCounter: 10
+  interruptCounter: 10
+  rectSize: {x: 0, y: 0}
+  rectPosition: {x: 0, y: 0}
+  add: 0
+  active: 0
+  delete: 0
+  deleteAsk: 0
+  showInfo: 0
+  failed: 0
+  foldOut: 0
+  inspect: 0
+  comments: 0
+  isDragged: 0
+  wasDragged: 0
+  rectActive: 0
+  copySelected: 0
+  hideChildren: 0
+  interruptCheck: 0
+  inspectSelected: 0
+  lookingForChild: 0
+  childActive: 0
+  openNext: 0
+  canHaveChildren: 1
+  refName: []
+  message: []
+  canInterrupt: 0
+  onInterrupt: 0
+  children: []
+  defaultSignal: Signal
+  useSignal: 0
+  currentChildIndex: 0
+  pause: 0
+--- !u!114 &4258579922999754595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328638248471477632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f42f2b3ac1526247a5f30a629ad1f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeSetup: 0
+  nodeState: 0
+  nodeType: 1
+  nodeParent: {fileID: 0}
+  completed: 0
+  nameType: OnEvent
+  fsmChild: 
+  fsmIndex: 0
+  selectCounter: 10
+  failedCounter: 10
+  interruptCounter: 10
+  rectSize: {x: 0, y: 0}
+  rectPosition: {x: 0, y: 0}
+  add: 0
+  active: 0
+  delete: 0
+  deleteAsk: 0
+  showInfo: 0
+  failed: 0
+  foldOut: 0
+  inspect: 0
+  comments: 0
+  isDragged: 0
+  wasDragged: 0
+  rectActive: 0
+  copySelected: 0
+  hideChildren: 0
+  interruptCheck: 0
+  inspectSelected: 0
+  lookingForChild: 0
+  childActive: 0
+  openNext: 1
+  canHaveChildren: 1
+  refName: []
+  message: []
+  onEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8442319604022847851}
+        m_TargetAssemblyTypeName: TwoBitMachines.TwoBitSprite.SpriteEngineBase, Assembly-CSharp
+        m_MethodName: SetSignalTrue
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Death
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7245577169341012352}
+        m_TargetAssemblyTypeName: TwoBitMachines.FlareEngine.ThePlayer.Player, Assembly-CSharp
+        m_MethodName: BlockInput
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 114001957170342077}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2436668119515619953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328638248471477632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d84b4b0e2acb34596f0dd2b39c1225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeSetup: 0
+  nodeState: 0
+  nodeType: 1
+  nodeParent: {fileID: 0}
+  completed: 0
+  nameType: Clock
+  fsmChild: 
+  fsmIndex: 0
+  selectCounter: 10
+  failedCounter: 10
+  interruptCounter: 10
+  rectSize: {x: 0, y: 0}
+  rectPosition: {x: 0, y: 0}
+  add: 0
+  active: 0
+  delete: 0
+  deleteAsk: 0
+  showInfo: 0
+  failed: 0
+  foldOut: 1
+  inspect: 0
+  comments: 0
+  isDragged: 0
+  wasDragged: 0
+  rectActive: 0
+  copySelected: 0
+  hideChildren: 0
+  interruptCheck: 0
+  inspectSelected: 0
+  lookingForChild: 0
+  childActive: 0
+  openNext: 1
+  canHaveChildren: 1
+  refName: []
+  message: []
+  type: 0
+  wait: 3
+  min: 2
+  max: 5
+  dontReset: 0
+  waitAnimation: 
+  onBeginClock:
+    m_PersistentCalls:
+      m_Calls: []
+  onFinishClock:
+    m_PersistentCalls:
+      m_Calls: []
+  eventsFoldOut: 0
+  beginFoldOut: 0
+  finishFoldOut: 0
+--- !u!114 &6075060632399689528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328638248471477632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f42f2b3ac1526247a5f30a629ad1f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeSetup: 0
+  nodeState: 0
+  nodeType: 1
+  nodeParent: {fileID: 0}
+  completed: 0
+  nameType: OnEvent
+  fsmChild: 
+  fsmIndex: 0
+  selectCounter: 10
+  failedCounter: 10
+  interruptCounter: 10
+  rectSize: {x: 0, y: 0}
+  rectPosition: {x: 0, y: 0}
+  add: 0
+  active: 0
+  delete: 0
+  deleteAsk: 0
+  showInfo: 0
+  failed: 0
+  foldOut: 1
+  inspect: 0
+  comments: 0
+  isDragged: 0
+  wasDragged: 0
+  rectActive: 0
+  copySelected: 0
+  hideChildren: 0
+  interruptCheck: 0
+  inspectSelected: 0
+  lookingForChild: 0
+  childActive: 0
+  openNext: 1
+  canHaveChildren: 1
+  refName: []
+  message: []
+  onEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TwoBitMachines.FlareEngine.WorldManager, Assembly-CSharp
+        m_MethodName: ResetAll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114001957170342077}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2637481994307827508}
+        m_TargetAssemblyTypeName: TwoBitMachines.FlareEngine.WorldFloat, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 10
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7245577169341012352}
+        m_TargetAssemblyTypeName: TwoBitMachines.FlareEngine.ThePlayer.Player, Assembly-CSharp
+        m_MethodName: BlockInput
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4819136966367300837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,7 +3331,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 483194477
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: -377412452, guid: 71b480ec26f2f8141bf8c16d9c980461, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2939,7 +3769,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 483194477
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 1226476130, guid: e77b9fe4c9ed7fe4580dbe0e74c08484, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -1,24 +1,23 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TwoBitMachines.FlareEngine;
 using TwoBitMachines.TwoBitSprite;
 using UnityEngine;
 
 public class Eat : MonoBehaviour
 {
     private SpriteEngine spriteEngine;
+    private Firearm firearm;
 
     private void Start()
     {
-        spriteEngine = GetComponent<SpriteEngine>();
+        firearm = GetComponent<Firearm>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToggleEat()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            spriteEngine.SetSignal("Eat");
-        }
+        firearm.enabled = !firearm.enabled;
     }
+    
 }
