@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class IcePiece : MonoBehaviour
 {
+    //来自同一个冰柱的碎片一起计算伤害，打中的碎片越多造成的伤害越高
     public float damage = 0.2f;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,6 @@ public class IcePiece : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-            Debug.Log(other.gameObject.name);
                    if (other.gameObject.name == "Player")
                    {
                        var health = other.gameObject.GetComponent<Health>();

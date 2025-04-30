@@ -4,16 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc865e02-301c-45d1-bf89-02e8c4687cb5" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NightyBiety/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NightyBiety/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DropTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DropTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MergeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MergeScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/monkey/Scripts/Ice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/Scripts/Ice.cs" afterDir="false" />
+    <list default="true" id="dc865e02-301c-45d1-bf89-02e8c4687cb5" name="更改" comment="marge">
+      <change beforePath="$PROJECT_DIR$/Assets/FairyOnTheTree/Scenes/MergeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FairyOnTheTree/Scenes/MergeScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/monkey/Scripts/IcePiece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/Scripts/IcePiece.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice3.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice3.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice3.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/碎片04_12.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/碎片04_12.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/碎片04_13.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/碎片04_13.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice1/01-11.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice1/01-11.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/10.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/10.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/11.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/11.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/12.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/12.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/13.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/13.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/4.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/4.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/5.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/5.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/6.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/6.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/7.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/7.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/8.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/8.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/monkey/animation/ice4/9.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/monkey/animation/ice4/9.anim" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +48,22 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/monkey/Scripts/IcePiece.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/DropTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/DropTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/FairyOnTheTree/Prefabs/Scene.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/FairyOnTheTree/Prefabs/Scene.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/FairyOnTheTree/Prefabs/Scene.prefab.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/FairyOnTheTree/Prefabs/Scene.prefab.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/FairyOnTheTree/Scenes/Scene.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/FairyOnTheTree/Scenes/Scene.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/Scripts/Ice.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/Scripts/Ice.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/Scripts/IcePiece.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/Scripts/IcePiece.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/monkey/Scripts/IcePiece.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/Scripts/IcePiece.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/animation/ice3.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dyh/NightyBiety/Assets/monkey/animation/ice3.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/trigger2.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -131,6 +153,7 @@
       <workItem from="1745330239665" duration="16131000" />
       <workItem from="1745767098664" duration="89000" />
       <workItem from="1745770214919" duration="2428000" />
+      <workItem from="1745907719030" duration="6087000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -207,7 +230,9 @@
     <MESSAGE value="增加场景预制体" />
     <MESSAGE value="添加ice4动画和intro" />
     <MESSAGE value="合并到场景mergeScene并更改灯效" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并到场景mergeScene并更改灯效" />
+    <MESSAGE value="marge" />
+    <option name="LAST_COMMIT_MESSAGE" value="marge" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
