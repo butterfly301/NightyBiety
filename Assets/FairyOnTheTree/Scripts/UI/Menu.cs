@@ -12,7 +12,6 @@ public class Menu : MonoBehaviour
     public void ClickStart()
     {
         canvasGroup.alpha = 0f;
-        
         // 使用DOTween进行渐变
         canvasGroup.DOFade(1f, fadeDuration)
             .OnComplete(() => SceneManager.LoadScene(sceneToLoad));

@@ -694,7 +694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 460030487}
   fadeDuration: 2
-  sceneToLoad: MergeScene
+  sceneToLoad: MainScene
 --- !u!1 &1660474560
 GameObject:
   m_ObjectHideFlags: 0
