@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Animesh/Demo/Scenes/Animesh.unity
     guid: 666057d914b2f9949a9ff86232f37887
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: 016f65c949eb11c4089e61d31add4be9
+  - enabled: 1
+    path: Assets/Scenes/MergeScene.unity
+    guid: 457d45499742c2b49b6fa4a73c3942b3
   - enabled: 0
     path: Assets/WorkSpace/Zmisc/FlareDemoTest.unity
     guid: 64cd99dc440b62148a05656a42cba4f3

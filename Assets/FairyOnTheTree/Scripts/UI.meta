@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/FairyOnTheTree/Scripts/UI.meta
 guid: ed1cefaa371bbc94aa85bb697d63175a
+=======
+guid: 00918961b394674449edf6c9d57ce6e7
+>>>>>>> Stashed changes:Assets/Scripts/UI.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
